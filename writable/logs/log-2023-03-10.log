@@ -1,0 +1,539 @@
+INFO - 2023-03-10 15:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 15:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-10 10:33:16 --> mysqli_sql_exception: Table 'ferre_update.usuarios_tipos' doesn't exist in C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ut`.`id...', 0)
+#1 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ut`.`id...')
+#2 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ut`.`id...')
+#3 C:\xampp\htdocs\ferre_update\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `ut`.`id...', Array, false)
+#4 C:\xampp\htdocs\ferre_update\app\Models\Model_Select.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ferre_update\app\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(25): App\Models\Model_Select->Select_Data('usuarios_tipos ...', 'ut.id_tipo_usua...')
+#6 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->index()
+#7 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+#8 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ferre_update\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 10:33:16 --> Table 'ferre_update.usuarios_tipos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `ut`.`id_tipo_usuario`, `ut`.`tipo_nombre`, if(ut.estado_del_tipo_usuario = 1, \'ACTIVO\', \'INACTIVO\') as ESTADO, DATE_FORMAT(ut.fecha_creacion, \'%d-%m-%Y\') as fecha_creacion
+FROM `usuarios_tipos` `ut`', [], false)
+ 2 APPPATH\Models\Model_Select.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(25): App\Models\Model_Select->Select_Data('usuarios_tipos ut ', 'ut.id_tipo_usuario , ut.tipo_nombre, if(ut.estado_del_tipo_usuario = 1, \'ACTIVO\', \'INACTIVO\') as ESTADO, DATE_FORMAT(ut.fecha_creacion  , \'%d-%m-%Y\') as fecha_creacion')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-10 16:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-10 10:33:30 --> mysqli_sql_exception: Unknown column 'ut.tipo_nombre' in 'field list' in C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `ut`.`id...', 0)
+#1 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ut`.`id...')
+#2 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ut`.`id...')
+#3 C:\xampp\htdocs\ferre_update\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `ut`.`id...', Array, false)
+#4 C:\xampp\htdocs\ferre_update\app\Models\Model_Select.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ferre_update\app\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(25): App\Models\Model_Select->Select_Data('adm_tipos_usuar...', 'ut.id_tipo_usua...')
+#6 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->index()
+#7 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+#8 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ferre_update\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 10:33:30 --> Unknown column 'ut.tipo_nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `ut`.`id_tipo_usuario`, `ut`.`tipo_nombre`, if(ut.estado_del_tipo_usuario = 1, \'ACTIVO\', \'INACTIVO\') as ESTADO, DATE_FORMAT(ut.fecha_creacion, \'%d-%m-%Y\') as fecha_creacion
+FROM `adm_tipos_usuario` `ut`', [], false)
+ 2 APPPATH\Models\Model_Select.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(25): App\Models\Model_Select->Select_Data('adm_tipos_usuario ut ', 'ut.id_tipo_usuario , ut.tipo_nombre, if(ut.estado_del_tipo_usuario = 1, \'ACTIVO\', \'INACTIVO\') as ESTADO, DATE_FORMAT(ut.fecha_creacion  , \'%d-%m-%Y\') as fecha_creacion')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-10 16:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 10:34:39 --> Undefined property: stdClass::$tipo_nombre
+in APPPATH\Views\usuarios\tipos_de_usuario\vista_administrar_tipos_de_usuarios.php on line 59.
+ 1 APPPATH\Views\usuarios\tipos_de_usuario\vista_administrar_tipos_de_usuarios.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tipo_nombre', 'APPPATH\\Views\\usuarios\\tipos_de_usuario\\vista_administrar_tipos_de_usuarios.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\tipos_de_usuario\\vista_administrar_tipos_de_usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('usuarios/tipos_de_usuario/vista_administrar_tipos_de_usuarios', [], true)
+ 5 APPPATH\Views\plantilla.php(117): view('usuarios/tipos_de_usuario/vista_administrar_tipos_de_usuarios')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\plantilla.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('plantilla', [], true)
+ 9 APPPATH\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(28): view('plantilla', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-10 16:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 10:35:04 --> Undefined property: stdClass::$tipousu_fecha_creacion
+in APPPATH\Views\usuarios\tipos_de_usuario\vista_administrar_tipos_de_usuarios.php on line 61.
+ 1 APPPATH\Views\usuarios\tipos_de_usuario\vista_administrar_tipos_de_usuarios.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tipousu_fecha_creacion', 'APPPATH\\Views\\usuarios\\tipos_de_usuario\\vista_administrar_tipos_de_usuarios.php', 61)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\tipos_de_usuario\\vista_administrar_tipos_de_usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('usuarios/tipos_de_usuario/vista_administrar_tipos_de_usuarios', [], true)
+ 5 APPPATH\Views\plantilla.php(117): view('usuarios/tipos_de_usuario/vista_administrar_tipos_de_usuarios')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\plantilla.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('plantilla', [], true)
+ 9 APPPATH\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(28): view('plantilla', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-10 16:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 20:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 20:59:02 --> REDIRECTED ROUTE at /
+INFO - 2023-03-10 20:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 20:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 20:59:10 --> REDIRECTED ROUTE at /
+INFO - 2023-03-10 20:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 20:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 20:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 20:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 20:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 20:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 20:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 20:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 15:00:01 --> Undefined variable $tipousu_nombre
+in APPPATH\Controllers\Tipos_Usuarios\Tipos_Usuarios.php on line 59.
+ 1 APPPATH\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tipousu_nombre', 'APPPATH\\Controllers\\Tipos_Usuarios\\Tipos_Usuarios.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Agregar_Tipo_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-10 21:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-10 15:06:35 --> mysqli_sql_exception: Column 'tipousu_nombre' cannot be null in C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\xampp\htdocs\ferre_update\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\xampp\htdocs\ferre_update\app\Models\Model_Insert.php(7): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ferre_update\app\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(62): App\Models\Model_Insert->Insert_Data('adm_tipos_usuar...', Array)
+#6 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Agregar_Tipo_Usuario()
+#7 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+#8 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ferre_update\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 15:06:35 --> Column 'tipousu_nombre' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `adm_tipos_usuario` (`tipousu_nombre`, `codigousuario`) VALUES (:tipousu_nombre:, :codigousuario:)', [...], false)
+ 2 APPPATH\Models\Model_Insert.php(7): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(62): App\Models\Model_Insert->Insert_Data('adm_tipos_usuario', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Agregar_Tipo_Usuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-10 21:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 21:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-10 16:58:33 --> Undefined array key 0
+in APPPATH\Views\productos\vista_editar_producto.php on line 5.
+ 1 APPPATH\Views\productos\vista_editar_producto.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\productos\\vista_editar_producto.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\productos\\vista_editar_producto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('productos/vista_editar_producto', [], true)
+ 5 APPPATH\Views\plantilla.php(117): view('productos/vista_editar_producto')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\plantilla.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('plantilla', [], true)
+ 9 APPPATH\Controllers\productos\Productos.php(146): view('plantilla', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\productos\Productos->Vista_Editar_Producto('17366')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\productos\Productos))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-10 22:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 16:58:54 --> REDIRECTED ROUTE at /Errores_No_Existe_Registro
+INFO - 2023-03-10 22:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 22:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:02:08 --> REDIRECTED ROUTE at /Errores_No_Existe_Registro
+INFO - 2023-03-10 23:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 17:04:27 --> REDIRECTED ROUTE at /Errores_No_Existe_Registro
+INFO - 2023-03-10 23:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 23:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-10 18:02:37 --> REDIRECTED ROUTE at /Errores_No_Existe_Registro
+CRITICAL - 2023-03-10 18:03:07 --> Undefined variable $Traer_Tipo_Usuario_Por_ID
+in APPPATH\Views\usuarios\tipos_de_usuario\vista_agregar_tipo_usuario.php on line 1.
+ 1 APPPATH\Views\usuarios\tipos_de_usuario\vista_agregar_tipo_usuario.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Traer_Tipo_Usuario_Por_ID', 'APPPATH\\Views\\usuarios\\tipos_de_usuario\\vista_agregar_tipo_usuario.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\tipos_de_usuario\\vista_agregar_tipo_usuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('usuarios/tipos_de_usuario/vista_agregar_tipo_usuario', [], true)
+ 5 APPPATH\Views\plantilla.php(117): view('usuarios/tipos_de_usuario/vista_agregar_tipo_usuario')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\plantilla.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('plantilla', [], true)
+ 9 APPPATH\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(35): view('plantilla', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Vista_Agregar_Tipo_Usuario()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-10 18:03:45 --> Undefined variable $Traer_Tipo_Usuario_Por_ID
+in APPPATH\Views\usuarios\tipos_de_usuario\vista_agregar_tipo_usuario.php on line 44.
+ 1 APPPATH\Views\usuarios\tipos_de_usuario\vista_agregar_tipo_usuario.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Traer_Tipo_Usuario_Por_ID', 'APPPATH\\Views\\usuarios\\tipos_de_usuario\\vista_agregar_tipo_usuario.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\tipos_de_usuario\\vista_agregar_tipo_usuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('usuarios/tipos_de_usuario/vista_agregar_tipo_usuario', [], true)
+ 5 APPPATH\Views\plantilla.php(117): view('usuarios/tipos_de_usuario/vista_agregar_tipo_usuario')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\plantilla.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('plantilla', [], true)
+ 9 APPPATH\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(35): view('plantilla', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Vista_Agregar_Tipo_Usuario()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-10 18:05:46 --> REDIRECTED ROUTE at /Errores_No_Existe_Registro
+ERROR - 2023-03-10 18:28:19 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ferre_update`.`adm_tipos_usuario`, CONSTRAINT `fk_tipousuario_usuarios` FOREIGN KEY (`codigousuario`) REFERENCES `usuarios` (`codigousuario`) ON UPDATE CASCADE) in C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\xampp\htdocs\ferre_update\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\xampp\htdocs\ferre_update\app\Models\Model_Insert.php(7): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ferre_update\app\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(133): App\Models\Model_Insert->Insert_Data('adm_tipos_usuar...', Array, Array)
+#6 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Modificar_Tipo_Usuario()
+#7 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+#8 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ferre_update\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 18:28:19 --> Cannot add or update a child row: a foreign key constraint fails (`ferre_update`.`adm_tipos_usuario`, CONSTRAINT `fk_tipousuario_usuarios` FOREIGN KEY (`codigousuario`) REFERENCES `usuarios` (`codigousuario`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `adm_tipos_usuario` (`tipousu_nombre`) VALUES (:tipousu_nombre:)', [...], false)
+ 2 APPPATH\Models\Model_Insert.php(7): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(133): App\Models\Model_Insert->Insert_Data('adm_tipos_usuario', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Modificar_Tipo_Usuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-10 18:28:26 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ferre_update`.`adm_tipos_usuario`, CONSTRAINT `fk_tipousuario_usuarios` FOREIGN KEY (`codigousuario`) REFERENCES `usuarios` (`codigousuario`) ON UPDATE CASCADE) in C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\xampp\htdocs\ferre_update\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\xampp\htdocs\ferre_update\app\Models\Model_Insert.php(7): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ferre_update\app\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(133): App\Models\Model_Insert->Insert_Data('adm_tipos_usuar...', Array, Array)
+#6 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Modificar_Tipo_Usuario()
+#7 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+#8 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ferre_update\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 18:28:26 --> Cannot add or update a child row: a foreign key constraint fails (`ferre_update`.`adm_tipos_usuario`, CONSTRAINT `fk_tipousuario_usuarios` FOREIGN KEY (`codigousuario`) REFERENCES `usuarios` (`codigousuario`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `adm_tipos_usuario` (`tipousu_nombre`) VALUES (:tipousu_nombre:)', [...], false)
+ 2 APPPATH\Models\Model_Insert.php(7): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(133): App\Models\Model_Insert->Insert_Data('adm_tipos_usuario', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Modificar_Tipo_Usuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-10 18:29:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ferre_update`.`adm_tipos_usuario`, CONSTRAINT `fk_tipousuario_usuarios` FOREIGN KEY (`codigousuario`) REFERENCES `usuarios` (`codigousuario`) ON UPDATE CASCADE) in C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\xampp\htdocs\ferre_update\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\xampp\htdocs\ferre_update\app\Models\Model_Insert.php(7): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ferre_update\app\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(133): App\Models\Model_Insert->Insert_Data('adm_tipos_usuar...', Array, Array)
+#6 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Modificar_Tipo_Usuario()
+#7 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+#8 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ferre_update\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 18:29:16 --> Cannot add or update a child row: a foreign key constraint fails (`ferre_update`.`adm_tipos_usuario`, CONSTRAINT `fk_tipousuario_usuarios` FOREIGN KEY (`codigousuario`) REFERENCES `usuarios` (`codigousuario`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `adm_tipos_usuario` (`tipousu_nombre`) VALUES (:tipousu_nombre:)', [...], false)
+ 2 APPPATH\Models\Model_Insert.php(7): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(133): App\Models\Model_Insert->Insert_Data('adm_tipos_usuario', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Modificar_Tipo_Usuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-10 18:29:59 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ferre_update`.`adm_tipos_usuario`, CONSTRAINT `fk_tipousuario_usuarios` FOREIGN KEY (`codigousuario`) REFERENCES `usuarios` (`codigousuario`) ON UPDATE CASCADE) in C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\xampp\htdocs\ferre_update\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\xampp\htdocs\ferre_update\app\Models\Model_Insert.php(7): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ferre_update\app\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(133): App\Models\Model_Insert->Insert_Data('adm_tipos_usuar...', Array, Array)
+#6 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Modificar_Tipo_Usuario()
+#7 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+#8 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ferre_update\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 18:29:59 --> Cannot add or update a child row: a foreign key constraint fails (`ferre_update`.`adm_tipos_usuario`, CONSTRAINT `fk_tipousuario_usuarios` FOREIGN KEY (`codigousuario`) REFERENCES `usuarios` (`codigousuario`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `adm_tipos_usuario` (`tipousu_nombre`) VALUES (:tipousu_nombre:)', [...], false)
+ 2 APPPATH\Models\Model_Insert.php(7): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(133): App\Models\Model_Insert->Insert_Data('adm_tipos_usuario', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Modificar_Tipo_Usuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-10 18:30:19 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ferre_update`.`adm_tipos_usuario`, CONSTRAINT `fk_tipousuario_usuarios` FOREIGN KEY (`codigousuario`) REFERENCES `usuarios` (`codigousuario`) ON UPDATE CASCADE) in C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\xampp\htdocs\ferre_update\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\xampp\htdocs\ferre_update\app\Models\Model_Insert.php(7): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ferre_update\app\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(133): App\Models\Model_Insert->Insert_Data('adm_tipos_usuar...', Array, Array)
+#6 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Modificar_Tipo_Usuario()
+#7 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+#8 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ferre_update\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 18:30:19 --> Cannot add or update a child row: a foreign key constraint fails (`ferre_update`.`adm_tipos_usuario`, CONSTRAINT `fk_tipousuario_usuarios` FOREIGN KEY (`codigousuario`) REFERENCES `usuarios` (`codigousuario`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `adm_tipos_usuario` (`tipousu_nombre`) VALUES (:tipousu_nombre:)', [...], false)
+ 2 APPPATH\Models\Model_Insert.php(7): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(133): App\Models\Model_Insert->Insert_Data('adm_tipos_usuario', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Modificar_Tipo_Usuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-10 18:31:23 --> mysqli_sql_exception: Unknown column 'id_tipo_usuari' in 'where clause' in C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `adm_tip...', 0)
+#1 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `adm_tip...')
+#2 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `adm_tip...')
+#3 C:\xampp\htdocs\ferre_update\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `adm_tip...', Array, false)
+#4 C:\xampp\htdocs\ferre_update\app\Models\Model_Update.php(9): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ferre_update\app\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(133): App\Models\Model_Update->Update_Data('adm_tipos_usuar...', Array, Array)
+#6 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Modificar_Tipo_Usuario()
+#7 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+#8 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ferre_update\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 18:31:23 --> Unknown column 'id_tipo_usuari' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `adm_tipos_usuario` SET `tipousu_nombre` = :tipousu_nombre:
+WHERE `id_tipo_usuari` = :id_tipo_usuari:', [...], false)
+ 2 APPPATH\Models\Model_Update.php(9): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\Tipos_Usuarios\Tipos_Usuarios.php(133): App\Models\Model_Update->Update_Data('adm_tipos_usuario', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tipos_Usuarios\Tipos_Usuarios->Modificar_Tipo_Usuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_Usuarios\Tipos_Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-10 18:36:58 --> REDIRECTED ROUTE at /Errores_No_Existe_Registro
+ERROR - 2023-03-10 19:30:20 --> mysqli_sql_exception: Unknown column 'u.tipousuario' in 'field list' in C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `u`.`cod...', 0)
+#1 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`cod...')
+#2 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`cod...')
+#3 C:\xampp\htdocs\ferre_update\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`cod...', Array, false)
+#4 C:\xampp\htdocs\ferre_update\app\Models\Model_Select.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ferre_update\app\Controllers\Reportes\Reportes.php(210): App\Models\Model_Select->Select_Data('usuarios u', 'u.codigousuario...', Array)
+#6 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(934): App\Controllers\Reportes\Reportes->Reporte_De_Ventas()
+#7 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes\Reportes))
+#8 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ferre_update\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 19:30:20 --> Unknown column 'u.tipousuario' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`codigousuario`, `u`.`nombreusuario`, `u`.`tipousuario`, `u`.`nombre`
+FROM `usuarios` `u`
+WHERE `u`.`nombreusuario` = :u.nombreusuario:', [...], false)
+ 2 APPPATH\Models\Model_Select.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Reportes\Reportes.php(210): App\Models\Model_Select->Select_Data('usuarios u', 'u.codigousuario , u.nombreusuario, u.tipousuario, u.nombre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes\Reportes->Reporte_De_Ventas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes\Reportes))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-10 19:30:26 --> mysqli_sql_exception: Unknown column 'u.tipousuario' in 'field list' in C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ferre_update\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `u`.`cod...', 0)
+#1 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`cod...')
+#2 C:\xampp\htdocs\ferre_update\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`cod...')
+#3 C:\xampp\htdocs\ferre_update\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`cod...', Array, false)
+#4 C:\xampp\htdocs\ferre_update\app\Models\Model_Select.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ferre_update\app\Controllers\Reportes\Reportes.php(210): App\Models\Model_Select->Select_Data('usuarios u', 'u.codigousuario...', Array)
+#6 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(934): App\Controllers\Reportes\Reportes->Reporte_De_Ventas()
+#7 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes\Reportes))
+#8 C:\xampp\htdocs\ferre_update\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ferre_update\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-10 19:30:26 --> Unknown column 'u.tipousuario' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`codigousuario`, `u`.`nombreusuario`, `u`.`tipousuario`, `u`.`nombre`
+FROM `usuarios` `u`
+WHERE `u`.`nombreusuario` = :u.nombreusuario:', [...], false)
+ 2 APPPATH\Models\Model_Select.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Reportes\Reportes.php(210): App\Models\Model_Select->Select_Data('usuarios u', 'u.codigousuario , u.nombreusuario, u.tipousuario, u.nombre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Reportes\Reportes->Reporte_De_Ventas()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes\Reportes))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-10 19:34:45 --> REDIRECTED ROUTE at /Error_De_Acceso
+INFO - 2023-03-10 19:37:39 --> REDIRECTED ROUTE at /Error_De_Acceso
+INFO - 2023-03-10 19:37:43 --> REDIRECTED ROUTE at /Error_De_Acceso
+INFO - 2023-03-10 19:39:09 --> REDIRECTED ROUTE at /Error_De_Acceso
+INFO - 2023-03-10 19:39:09 --> REDIRECTED ROUTE at /Error_De_Acceso
+INFO - 2023-03-10 21:33:17 --> REDIRECTED ROUTE at /Error_De_Acceso
+INFO - 2023-03-10 21:33:30 --> REDIRECTED ROUTE at /Error_De_Acceso
+INFO - 2023-03-10 21:33:30 --> REDIRECTED ROUTE at /Error_De_Acceso
+INFO - 2023-03-10 21:34:15 --> REDIRECTED ROUTE at /Error_De_Acceso
+INFO - 2023-03-10 21:34:22 --> REDIRECTED ROUTE at /Error_De_Acceso
+INFO - 2023-03-10 21:35:10 --> REDIRECTED ROUTE at /Error_De_Acceso
+INFO - 2023-03-10 21:37:14 --> REDIRECTED ROUTE at /Error_De_Acceso

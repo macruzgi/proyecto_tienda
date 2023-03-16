@@ -1,0 +1,198 @@
+INFO - 2023-01-28 04:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-28 04:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-28 04:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-28 04:20:02 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'erreteria' in C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '010707', 'erreteria', 3306, '', 0)
+#1 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ferreteria\app\Models\Usuario_model.php(6): CodeIgniter\Database\BaseConnection->query('select u.codigo...', Array)
+#4 C:\xampp\htdocs\ferreteria\app\Controllers\Login.php(54): App\Models\Usuario_model->Traer_Usuario_Login(Array)
+#5 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+#6 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ferreteria\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'erreteria' in C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ferreteria\app\Models\Usuario_model.php(6): CodeIgniter\Database\BaseConnection->query('select u.codigo...', Array)
+#3 C:\xampp\htdocs\ferreteria\app\Controllers\Login.php(54): App\Models\Usuario_model->Traer_Usuario_Login(Array)
+#4 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+#5 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ferreteria\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-28 04:20:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'erreteria'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Usuario_model.php(6): CodeIgniter\Database\BaseConnection->query('select u.codigousuario , u.nombreusuario , u.nombre from usuarios u where u.estado= 1 and u.nombreusuario = ? and u.contrasena = ?', [...])
+ 3 APPPATH\Controllers\Login.php(54): App\Models\Usuario_model->Traer_Usuario_Login([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-28 04:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-28 04:20:04 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'erreteria' in C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '010707', 'erreteria', 3306, '', 0)
+#1 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ferreteria\app\Models\Usuario_model.php(6): CodeIgniter\Database\BaseConnection->query('select u.codigo...', Array)
+#4 C:\xampp\htdocs\ferreteria\app\Controllers\Login.php(54): App\Models\Usuario_model->Traer_Usuario_Login(Array)
+#5 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+#6 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ferreteria\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'erreteria' in C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ferreteria\app\Models\Usuario_model.php(6): CodeIgniter\Database\BaseConnection->query('select u.codigo...', Array)
+#3 C:\xampp\htdocs\ferreteria\app\Controllers\Login.php(54): App\Models\Usuario_model->Traer_Usuario_Login(Array)
+#4 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+#5 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ferreteria\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-28 04:20:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'erreteria'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Usuario_model.php(6): CodeIgniter\Database\BaseConnection->query('select u.codigousuario , u.nombreusuario , u.nombre from usuarios u where u.estado= 1 and u.nombreusuario = ? and u.contrasena = ?', [...])
+ 3 APPPATH\Controllers\Login.php(54): App\Models\Usuario_model->Traer_Usuario_Login([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-28 04:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-28 04:20:13 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'erreteria' in C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '010707', 'erreteria', 3306, '', 0)
+#1 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ferreteria\app\Models\Usuario_model.php(6): CodeIgniter\Database\BaseConnection->query('select u.codigo...', Array)
+#4 C:\xampp\htdocs\ferreteria\app\Controllers\Login.php(54): App\Models\Usuario_model->Traer_Usuario_Login(Array)
+#5 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+#6 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ferreteria\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'erreteria' in C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ferreteria\app\Models\Usuario_model.php(6): CodeIgniter\Database\BaseConnection->query('select u.codigo...', Array)
+#3 C:\xampp\htdocs\ferreteria\app\Controllers\Login.php(54): App\Models\Usuario_model->Traer_Usuario_Login(Array)
+#4 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+#5 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ferreteria\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-28 04:20:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'erreteria'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Usuario_model.php(6): CodeIgniter\Database\BaseConnection->query('select u.codigousuario , u.nombreusuario , u.nombre from usuarios u where u.estado= 1 and u.nombreusuario = ? and u.contrasena = ?', [...])
+ 3 APPPATH\Controllers\Login.php(54): App\Models\Usuario_model->Traer_Usuario_Login([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-28 04:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-28 04:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-28 04:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-28 04:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-28 04:20:29 --> Trying to access array offset on value of type bool
+in APPPATH\Views\usuarios\vista_administrar_permisos.php on line 3.
+ 1 APPPATH\Views\usuarios\vista_administrar_permisos.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Views\\usuarios\\vista_administrar_permisos.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\vista_administrar_permisos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('usuarios/vista_administrar_permisos', [], true)
+ 5 APPPATH\Views\plantilla.php(109): view('usuarios/vista_administrar_permisos')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\plantilla.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('plantilla', [], true)
+ 9 APPPATH\Controllers\Usuarios.php(20): view('plantilla', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->Asignar_Permisos('1')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-28 04:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-28 04:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-28 04:20:37 --> Trying to access array offset on value of type bool
+in APPPATH\Views\usuarios\vista_administrar_permisos.php on line 3.
+ 1 APPPATH\Views\usuarios\vista_administrar_permisos.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Views\\usuarios\\vista_administrar_permisos.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\vista_administrar_permisos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('usuarios/vista_administrar_permisos', [], true)
+ 5 APPPATH\Views\plantilla.php(109): view('usuarios/vista_administrar_permisos')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\plantilla.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('plantilla', [], true)
+ 9 APPPATH\Controllers\Usuarios.php(20): view('plantilla', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->Asignar_Permisos('1')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-28 04:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-28 04:37:54 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'erreteria' in C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '010707', 'erreteria', 3306, '', 0)
+#1 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ferreteria\app\Models\Usuario_model.php(24): CodeIgniter\Database\BaseConnection->query('select u.codigo...', '1')
+#4 C:\xampp\htdocs\ferreteria\app\Controllers\Usuarios.php(18): App\Models\Usuario_model->Traer_Todos_Los_Permisos('1')
+#5 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(934): App\Controllers\Usuarios->Asignar_Permisos('1')
+#6 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ferreteria\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'erreteria' in C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ferreteria\app\Models\Usuario_model.php(24): CodeIgniter\Database\BaseConnection->query('select u.codigo...', '1')
+#3 C:\xampp\htdocs\ferreteria\app\Controllers\Usuarios.php(18): App\Models\Usuario_model->Traer_Todos_Los_Permisos('1')
+#4 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(934): App\Controllers\Usuarios->Asignar_Permisos('1')
+#5 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#6 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ferreteria\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-28 04:37:54 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'erreteria'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Usuario_model.php(24): CodeIgniter\Database\BaseConnection->query('select u.codigousuario , u.nombreusuario, u.nombre ,   om.id_opcion , om.opcion_nombre  from usuarios u 
+inner join usuario_opciones uo on (uo.id_usuario = u.codigousuario)
+inner  join opciones_menu om on(om.id_opcion = uo.id_opcion)
+where uo.id_usuario = ?', '1')
+ 3 APPPATH\Controllers\Usuarios.php(18): App\Models\Usuario_model->Traer_Todos_Los_Permisos('1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->Asignar_Permisos('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-28 04:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-28 04:38:04 --> Trying to access array offset on value of type bool
+in APPPATH\Views\usuarios\vista_administrar_permisos.php on line 3.
+ 1 APPPATH\Views\usuarios\vista_administrar_permisos.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH\\Views\\usuarios\\vista_administrar_permisos.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\vista_administrar_permisos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('usuarios/vista_administrar_permisos', [], true)
+ 5 APPPATH\Views\plantilla.php(109): view('usuarios/vista_administrar_permisos')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\plantilla.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('plantilla', [], true)
+ 9 APPPATH\Controllers\Usuarios.php(20): view('plantilla', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->Asignar_Permisos('1')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-28 04:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

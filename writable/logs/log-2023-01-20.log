@@ -1,0 +1,298 @@
+CRITICAL - 2023-01-20 20:34:00 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 20:40:42 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 20:44:41 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 20:56:49 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 21:00:50 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 21:01:33 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 21:01:58 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 21:04:02 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 49.
+ 1 APPPATH\Controllers\Login.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:21:59 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 49.
+ 1 APPPATH\Controllers\Login.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:33:12 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:34:46 --> Undefined property: App\Controllers\Login::$Usuario_model
+in APPPATH\Controllers\Login.php on line 51.
+ 1 APPPATH\Controllers\Login.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$Usuario_model', 'APPPATH\\Controllers\\Login.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:37:08 --> Undefined property: App\Controllers\Login::$Usuario_model
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$Usuario_model', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:38:40 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 51.
+ 1 APPPATH\Controllers\Login.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:40:02 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 49.
+ 1 APPPATH\Controllers\Login.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:40:30 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 51.
+ 1 APPPATH\Controllers\Login.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:41:00 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 51.
+ 1 APPPATH\Controllers\Login.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:41:09 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 51.
+ 1 APPPATH\Controllers\Login.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:41:38 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 51.
+ 1 APPPATH\Controllers\Login.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:06:21 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 51.
+ 1 APPPATH\Controllers\Login.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:07:51 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 51.
+ 1 APPPATH\Controllers\Login.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:08:47 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-20 23:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-20 23:09:36 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:10:15 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:10:24 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:10:24 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:11:41 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-20 23:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-20 23:48:11 --> Undefined variable $usurio
+in APPPATH\Controllers\Login.php on line 48.
+ 1 APPPATH\Controllers\Login.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usurio', 'APPPATH\\Controllers\\Login.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-20 23:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-20 23:48:54 --> Undefined property: App\Controllers\Login::$Usuario_model
+in APPPATH\Controllers\Login.php on line 51.
+ 1 APPPATH\Controllers\Login.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$Usuario_model', 'APPPATH\\Controllers\\Login.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-20 23:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-20 23:50:09 --> Undefined property: App\Controllers\Login::$Usuario_model
+in APPPATH\Controllers\Login.php on line 51.
+ 1 APPPATH\Controllers\Login.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$Usuario_model', 'APPPATH\\Controllers\\Login.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-20 23:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-20 23:51:24 --> Undefined variable $adm_usaurio
+in APPPATH\Controllers\Login.php on line 54.
+ 1 APPPATH\Controllers\Login.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adm_usaurio', 'APPPATH\\Controllers\\Login.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-20 23:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-20 23:51:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? and u.contrasena = md5(?)' at line 1 in C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php(295): mysqli->query('select u.codigo...', 0)
+#1 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select u.codigo...')
+#2 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select u.codigo...')
+#3 C:\xampp\htdocs\ferreteria\app\Models\Usuario_model.php(6): CodeIgniter\Database\BaseConnection->query('select u.codigo...', Array)
+#4 C:\xampp\htdocs\ferreteria\app\Controllers\Login.php(54): App\Models\Usuario_model->Traer_Usuario_Login(Array)
+#5 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+#6 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ferreteria\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-20 23:51:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? and u.contrasena = md5(?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Usuario_model.php(6): CodeIgniter\Database\BaseConnection->query('select u.codigousuario , u.nombreusuario , u.nombre from usuaros u where u.estado= 1 and u.nombreusuario = ? and u.contrasena = md5(?)', [...])
+ 2 APPPATH\Controllers\Login.php(54): App\Models\Usuario_model->Traer_Usuario_Login([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-20 23:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-20 23:54:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? and u.contrasena = md5(?)' at line 1 in C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php(295): mysqli->query('select u.codigo...', 0)
+#1 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select u.codigo...')
+#2 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select u.codigo...')
+#3 C:\xampp\htdocs\ferreteria\app\Models\Usuario_model.php(6): CodeIgniter\Database\BaseConnection->query('select u.codigo...', Array)
+#4 C:\xampp\htdocs\ferreteria\app\Controllers\Login.php(54): App\Models\Usuario_model->Traer_Usuario_Login(Array)
+#5 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+#6 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ferreteria\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-20 23:54:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? and u.contrasena = md5(?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Usuario_model.php(6): CodeIgniter\Database\BaseConnection->query('select u.codigousuario , u.nombreusuario , u.nombre from usuarios u where u.estado= 1 and u.nombreusuario = ? and u.contrasena = md5(?)', [...])
+ 2 APPPATH\Controllers\Login.php(54): App\Models\Usuario_model->Traer_Usuario_Login([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-20 23:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-20 23:55:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? and u.contrasena = ?' at line 1 in C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ferreteria\system\Database\MySQLi\Connection.php(295): mysqli->query('select u.codigo...', 0)
+#1 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('select u.codigo...')
+#2 C:\xampp\htdocs\ferreteria\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('select u.codigo...')
+#3 C:\xampp\htdocs\ferreteria\app\Models\Usuario_model.php(6): CodeIgniter\Database\BaseConnection->query('select u.codigo...', Array)
+#4 C:\xampp\htdocs\ferreteria\app\Controllers\Login.php(54): App\Models\Usuario_model->Traer_Usuario_Login(Array)
+#5 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+#6 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\ferreteria\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ferreteria\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-20 23:55:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? and u.contrasena = ?' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\Usuario_model.php(6): CodeIgniter\Database\BaseConnection->query('select u.codigousuario , u.nombreusuario , u.nombre from usuarios u where u.estado= 1 and u.nombreusuario = ? and u.contrasena = ?', [...])
+ 2 APPPATH\Controllers\Login.php(54): App\Models\Usuario_model->Traer_Usuario_Login([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->Validar_Usuario()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:56:56 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Models\Usuario_model.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Usuario_model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Usuario_model')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Usuario_model')
+ 4 SYSTEMPATH\Config\Factories.php(155): class_exists('App\\Models\\Usuario_model')
+ 5 SYSTEMPATH\Config\Factories.php(125): CodeIgniter\Config\Factories::locateClass([...], 'Usuario_model')
+ 6 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 7 SYSTEMPATH\Common.php(818): CodeIgniter\Config\Factories::models('Usuario_model', [...], null)
+ 8 APPPATH\Controllers\Login.php(8): model('Usuario_model')
+ 9 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Login->__construct()
+10 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-01-20 23:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-20 23:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-20 23:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-20 23:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-20 23:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-20 23:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
