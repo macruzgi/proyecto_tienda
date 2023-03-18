@@ -28,7 +28,7 @@ class Cotizaciones extends BaseController
     }
 	public function Re_Imprimir_Cotizacion($id_cotizacion){
 		//verificar si el usuario tiene acceso
-		$this->Ver_Si_Usuario_Tiene_Acceso_A_la_Opcion(1, 'tiene_permiso');
+		$this->Ver_Si_Usuario_Tiene_Acceso_A_la_Opcion(1, 'tiene_permiso'); //1 es Cotizaciones
 		  
          $tabla = "cotizacion c
 		inner join cotizacion_detalle cd ON (cd.id_cotizacion = c.id_cotizacion)

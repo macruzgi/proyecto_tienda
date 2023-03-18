@@ -799,4 +799,101 @@ class Reportes extends BaseController
 		return json_encode($respuesta);
 					 
 	}
+	public function Re_Imprimir_Cotizacion($id_cotizacion){
+		//verificar si el usuario tiene acceso
+		$this->Ver_Si_Usuario_Tiene_Acceso_A_la_Opcion(1, 'tiene_permiso'); //1 es Cotizaciones
+		$tabla = "cotizacion c
+		inner join cotizacion_detalle cd ON (cd.id_cotizacion = c.id_cotizacion)
+		inner join productos p on(p.codigoproducto = cd.codigoproducto)
+		inner join fac_cliente fc on(fc.id_cliente = c.id_cliente)";
+		$columnas = "c.id_cotizacion , c.numero_cotizacion , 	DATE_FORMAT(c.fecha, '%d-%m-%Y') as fecha, c.nombre_cliente,
+		c.terminos_condiciones, DATE_FORMAT(c.fecha_ultima_modificacion , '%d-%m-%Y') as fecha_ultima_modificacion, c.costo ,
+		cd.id_detalle , cd.cantidad , cd.precio_venta , cd.subtotal,
+		cd.codigoproducto , p.nombre , p.descripcion,
+		fc.cli_codigo";
+		$where = array(
+			"c.id_cotizacion"=>$id_cotizacion
+		);
+		$oder_by = "cd.id_detalle asc";
+		
+		$Datos_Para_El_Reporte = $this->Model_Select->Select_Data($tabla, $columnas, $where, $oder_by);
+		
+		//print_r($Datos_Para_El_Reporte); return;
+		$Traer_Datos_Empresa = $this->Traer_Datos_Empresa();
+		
+		
+		$pdf = new Pdftcpdf('P', 'mm', 'Letter', true, 'UTF-8', false);
+		$pdf->nombre_empresa =$Traer_Datos_Empresa[0]->valor_configuracion;
+		$pdf->direccion=$Traer_Datos_Empresa[1]->valor_configuracion;
+		$pdf->telefono =$Traer_Datos_Empresa[2]->valor_configuracion;
+		$pdf->logo_empresa =$Traer_Datos_Empresa[4]->valor_configuracion;
+		$pdf->moneda =$Traer_Datos_Empresa[3]->valor_configuracion;
+		$pdf->tituloReporte ="Cotización";
+		$pdf->usuario =session("nombreusuario");
+		$pdf->SetMargins(10, 25, 10); // Establecer los márgenes (izquierda, arriba, derecha)
+		$pdf->AddPage();
+		
+		//$pdf->SetY(30);
+		$pdf->SetFont('', '', 8);
+				
+		
+		// Crear la estructura de la tabla con HTML
+		$html = '
+		<table border="0" cellpadding="0" cellspacing="0"  width="100%">
+		<tr>
+			<td>Cotización No. <b>'.$Datos_Para_El_Reporte[0]->numero_cotizacion.'</b></td>
+			<td style="text-align:right;">Cliente: <b>'.$Datos_Para_El_Reporte[0]->nombre_cliente.'</b> Fecha: <b>'.$Datos_Para_El_Reporte[0]->fecha.'</b> Fecha de actualización: '.$Datos_Para_El_Reporte[0]->fecha_ultima_modificacion.'</td>
+		</tr>
+		<tr>
+			<td colspan="2">Términos y condiciones: '.$Datos_Para_El_Reporte[0]->terminos_condiciones.'</td>
+		</tr>
+		</table>
+		<style>
+			table {
+				border-collapse: collapse;
+			}
+
+			td, th {
+				border-bottom: 1px solid black;
+			}
+		</style>
+		<table>
+					<thead>
+					<tr>
+						<th style="text-align:center;font-weight: bold;">Cantidad</th>
+						<th style="text-align:center;font-weight: bold;">Producto</th>
+						<th style="text-align:center;font-weight: bold;">Precio</th>
+						<th style="text-align:center;font-weight: bold;">Sub-total</th>
+					</tr>
+				</thead>
+				<tbody>';
+		
+		foreach ($Datos_Para_El_Reporte as $Dato_Encontrado) {
+			
+			$html .= '<tr>
+						<td style="text-align:center;">' . $Dato_Encontrado->cantidad . '</td>
+						<td>' . $Dato_Encontrado->nombre . '</td>
+						<td style="text-align:right;">' . $Dato_Encontrado->precio_venta . '</td>
+						<td style="text-align:right;">' . $Dato_Encontrado->subtotal . '</td>
+					</tr>';
+								  
+		}
+		$html .='<tr>
+					<td colspan="3" style="text-align:right;">Total $</td>
+					<td style="text-align:right;"><b>' . $Dato_Encontrado->subtotal . '</b></td>
+				</tr>';
+		$html .= '</tbody></table>';
+
+		$pdf->writeHTML($html, true, false, false, false, '');
+
+					
+		// Guarda el archivo en la carpeta public/Reportes
+		// Crea la ruta del archivo en la carpeta public/Reportes
+		$nombre_archivo = 'Reportes/Reporte.pdf';
+		$success = write_file($nombre_archivo, $pdf->Output('', 'I'));
+		exit();
+		
+						 
+	}
+	
 }

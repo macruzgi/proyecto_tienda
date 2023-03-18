@@ -67,7 +67,7 @@
 								<td><?php echo $Cotizacion_Encontrada->ESTADO;?></td>
 								<td>
 									<div class="fa-hover col-md-3 col-sm-4  mr-3">
-									<h3><a href="<?php echo base_url();?>/Re_Imprimir_Cotizacion/<?php echo $Cotizacion_Encontrada->id_cotizacion;?>" data-toggle="tooltip" data-placement="top" title data-original-title="Re-imprimir"><i class="fa fa-print"></i></a></h3>
+									<h3><a href="<?php echo base_url();?>/Reportes/Re_Imprimir_Cotizacion/<?php echo $Cotizacion_Encontrada->id_cotizacion;?>" data-toggle="tooltip" data-placement="top" title data-original-title="Re-imprimir" target="_blank"><i class="fa fa-print" ></i></a></h3>
 									</div>
 									<div class="fa-hover col-md-3 col-sm-4  ">
 									  <h3><a href="#" onClick="Eliminar_Cotizacion(<?php echo $Cotizacion_Encontrada->id_cotizacion;?>); event.preventDefault();"><i class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="" data-original-title="Eliminar"></i></a></h3> 

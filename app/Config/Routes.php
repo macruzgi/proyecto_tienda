@@ -171,6 +171,7 @@ $routes->get('/Reportes/Kardex', 'Reportes\Reportes::Kardex');
 $routes->post('/Reportes/Reporte_De_Kardex', 'Reportes\Reportes::Reporte_De_Kardex');
 $routes->get('/Reportes/Precios', 'Reportes\Reportes::Precios');
 $routes->post('/Reportes/Reporte_Precios', 'Reportes\Reportes::Reporte_Precios');
+$routes->get('/Reportes/Re_Imprimir_Cotizacion/(:num)', 'Reportes\Reportes::Re_Imprimir_Cotizacion/$1');
 
 /*
  *rutas para los tipos de usuarios

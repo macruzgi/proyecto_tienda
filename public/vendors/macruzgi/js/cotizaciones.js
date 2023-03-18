@@ -143,7 +143,12 @@ function Guardar_E_Imprimir_Cotizacion(){
 					
 					if(datos_esperados.respuesta == 1){
 						//alert('exito');
-						window.location.replace(baseUrl + '/Re_Imprimir_Cotizacion/'+datos_esperados.datos_adicionales.id_cotizacion);
+						//window.location.replace(
+						//se cambia para mostrar la cotizacion en pdf y no solo en print
+						//window.open(baseUrl + '/Re_Imprimir_Cotizacion/'+datos_esperados.datos_adicionales.id_cotizacion, '_blank');
+						window.open(baseUrl + '/Reportes/Re_Imprimir_Cotizacion/'+datos_esperados.datos_adicionales.id_cotizacion, '_blank');
+						
+						location.reload();
 					}
 					else if(datos_esperados.respuesta == 0){
 						$('#mensaje').empty();//limpio los erores
