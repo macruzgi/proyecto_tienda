@@ -312,8 +312,37 @@ function Guardar_Pre_Venta(){
 				success:function(datos_esperados){
 					
 					if(datos_esperados.respuesta == 1){
+						//si la pre-factura fue guardada, inicio el socket para enviar un mensaje al admin que se ha generaro una nueva factura
+						var socket = new WebSocket('ws://localhost:8080');
+						socket.onopen = function(event){
+							//la conexion WebSocket esta abirta, ahora llamamos a transmitirMensaje
+							transmitirMensaje();
+						}
+						socket.onmessage = function(respuesta_server_socket){
+							//asignamos el mensaje que el server espera
+							alertify.defaults.glossary.title ='Mensaje nuevo';
+							alertify.defaults.glossary.ok = 'OK';
+							alertify.defaults.glossary.cancel = 'Cerrar';
+
+							alertify.confirm(respuesta_server_socket.data,
+							  function(){
+								  },
+							  function(){
+								
+							  }).set('defaultFocus', 'cancel');
+  
+  
+						};
+						//funcion que trasmitria el mensaje
+						function transmitirMensaje(){
+							socket.send('Factura nueva en la bandeja de entrada');
+						}
+						
 						//alert('exito');
-						window.location.replace(baseUrl + '/Ventas/Bandeja_Facturas');
+						setTimeout(()=>{
+							window.location.replace(baseUrl + '/Ventas/Nueva_Venta');
+						}, 3000);
+						
 					}
 					else if(datos_esperados.respuesta == 0){
 						$('#mensaje').empty();//limpio los erores

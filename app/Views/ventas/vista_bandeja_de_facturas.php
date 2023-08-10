@@ -1,6 +1,6 @@
 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Bandeja de Facturas</small></h2>
+                    <h2>Bandeja de Pre-Facturas</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -126,3 +126,29 @@
 				<!--fin modal-->
             </div>
                 </div>
+<script>
+var socket = new WebSocket('ws://localhost:8080');
+socket.onopen = function(event){
+//la conexion WebSocket esta abirta, ahora llamamos a transmitirMensaje
+	transmitirMensaje();
+}
+socket.onmessage = function(respuesta_server_socket){
+//asignamos el mensaje que el server espera
+alertify.defaults.glossary.title ='Mensaje nuevo';
+alertify.defaults.glossary.ok = 'OK';
+alertify.defaults.glossary.cancel = 'Cerrar';
+
+alertify.confirm(respuesta_server_socket.data,
+function(){
+},
+function(){
+								
+}).set('defaultFocus', 'cancel');
+  
+  
+};
+//funcion que trasmitria el mensaje
+function transmitirMensaje(){
+socket.send('');
+}
+</script>
