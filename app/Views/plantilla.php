@@ -126,7 +126,7 @@ $Datos_Empresa= json_decode(view_cell('\App\Cell\EmpresaInfo::Datos_Empresa') , 
           <div class="pull-right">
             Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
           </div>
-          <div class="clearfix">Developer 2023-<?php echo date("Y");?> <a href="http://macruzgi.atwebpages.com" target="_blank">MaCruz-Gi</a> E-mail:giancarlos1029@hotmail.com</div>
+          <div class="clearfix">Developer 2023-<?php echo date("Y");?> <a href="https://macruzgi.com/" target="_blank">MaCruz-Gi</a> E-mail:giancarlos1029@hotmail.com</div>
         </footer>
         <!-- /footer content -->
       </div>
